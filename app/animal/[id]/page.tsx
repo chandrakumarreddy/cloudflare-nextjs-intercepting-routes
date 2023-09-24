@@ -1,5 +1,7 @@
 import { type Animal, animals } from "@/app/constants/animals";
 
+export const runtime = "edge";
+
 export default function Animal({ params }: { params: { id: string } }) {
   const animal: Animal | undefined = animals.find(
     (animal) => animal.id === params.id
